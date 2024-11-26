@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--   
+   Copyright (c) 2018, 2023, Oracle and/or its affiliates. All rights reserved.
+   
+   DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+   
+   The contents of this file are subject to the terms of either the Universal Permissive License 
+   v 1.0 as shown at http://oss.oracle.com/licenses/upl
+   
+   or the following license:
+   
+   Redistribution and use in source and binary forms, with or without modification, are permitted
+   provided that the following conditions are met:
+   
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions
+   and the following disclaimer.
+   
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of
+   conditions and the following disclaimer in the documentation and/or other materials provided with
+   the distribution.
+   
+   3. Neither the name of the copyright holder nor the names of its contributors may be used to
+   endorse or promote products derived from this software without specific prior written permission.
+   
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+   FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+   WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<feature
+      id="org.openjdk.jmc.feature.core"
+      label="%name"
+      version="9.0.0.202403182212"
+      provider-name="%provider"
+      plugin="org.openjdk.jmc.ui">
+
+   <description url="%descriptionUrl">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.forms"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.help.ui"/>
+      <import plugin="org.eclipse.help.webapp"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.apache.commons.codec"/>
+      <import plugin="org.eclipse.e4.core.di"/>
+      <import plugin="org.eclipse.e4.core.contexts"/>
+   </requires>
+
+   <plugin
+         id="org.openjdk.jmc.attach"
+         download-size="5"
+         install-size="9"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.browser"
+         download-size="160"
+         install-size="297"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.common"
+         download-size="483"
+         install-size="1043"
+         version="9.0.0.202403181454"
+         unpack="false"/>
+
+   <plugin
+         id="lz4-java"
+         download-size="705"
+         install-size="1762"
+         version="1.8.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.ui"
+         download-size="701"
+         install-size="1366"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.docs"
+         download-size="184"
+         install-size="479"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.jdp"
+         download-size="29"
+         install-size="52"
+         version="9.0.0.202403181456"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.rjmx"
+         download-size="286"
+         install-size="853"
+         version="9.0.0.202403182212"/>
+
+   <plugin
+         id="org.openjdk.jmc.greychart"
+         download-size="134"
+         install-size="249"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.browser.jdp"
+         download-size="19"
+         install-size="37"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.browser.attach"
+         download-size="46"
+         install-size="91"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.rjmx.ui"
+         download-size="279"
+         install-size="556"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.commands"
+         download-size="43"
+         install-size="88"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.ui.common"
+         download-size="43"
+         install-size="76"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.ui.celleditors"
+         download-size="41"
+         install-size="77"
+         version="9.0.0.202403182212"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.rjmx.common"
+         download-size="253"
+         install-size="537"
+         version="9.0.0.202403181456"
+         unpack="false"/>
+
+   <plugin
+         id="org.openjdk.jmc.rjmx.ext"
+         download-size="11"
+         install-size="21"
+         version="9.0.0.202403182212"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="angus-activation"
+         download-size="36"
+         install-size="61"
+         version="2.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jakarta.activation-api"
+         download-size="78"
+         install-size="152"
+         version="2.1.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.angus.jakarta.mail"
+         download-size="748"
+         install-size="1466"
+         version="2.0.1"
+         unpack="false"/>
+
+   <plugin
+         id="fireplace-swing"
+         download-size="98"
+         install-size="219"
+         version="0.0.1.rc3"
+         unpack="false"/>
+
+   <plugin
+         id="fireplace-swing-animation"
+         download-size="19"
+         install-size="38"
+         version="0.0.1.rc3"
+         unpack="false"/>
+
+   <plugin
+         id="fireplace-swt-awt-bridge"
+         download-size="27"
+         install-size="52"
+         version="0.0.1.rc3"
+         unpack="false"/>
+
+   <plugin
+         id="radiance-animation"
+         download-size="93"
+         install-size="187"
+         version="6.0.0"
+         unpack="false"/>
+<license url="%licenseUrl">
+      %license
+   </license></feature>
